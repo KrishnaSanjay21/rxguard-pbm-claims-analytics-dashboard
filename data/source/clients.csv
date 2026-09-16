@@ -1,0 +1,6 @@
+client_id,client_name,industry,region,cost_factor
+CL001,Atlas Manufacturing,Manufacturing,Midwest,0.92
+CL002,BrightPath Schools,Education,Northeast,0.84
+CL003,Cedar Retail Group,Retail,South,1.05
+CL004,Northstar Logistics,Transportation,West,1.12
+CL005,Summit Tech Labs,Technology,National,1.28

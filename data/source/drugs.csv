@@ -1,0 +1,21 @@
+ndc,drug_name,therapeutic_class,brand_generic,maintenance_flag,generic_equivalent_available,reference_cost
+00011-1111-01,Atorvastatin 20 mg,Cardiovascular,Generic,True,False,18.0
+00022-2222-02,Rosuvastatin 10 mg,Cardiovascular,Generic,True,False,24.0
+00033-3333-03,Lipitor 20 mg,Cardiovascular,Brand,True,True,185.0
+00044-4444-04,Lisinopril 10 mg,Cardiovascular,Generic,True,False,12.0
+00055-5555-05,Metformin 500 mg,Diabetes,Generic,True,False,16.0
+00066-6666-06,Januvia 100 mg,Diabetes,Brand,True,True,515.0
+00077-7777-07,Ozempra Pen,Diabetes,Brand,True,False,965.0
+00088-8888-08,Levothyroxine 50 mcg,Endocrine,Generic,True,False,14.0
+00099-9999-09,Synthroid 50 mcg,Endocrine,Brand,True,True,96.0
+00110-1010-10,Sertraline 50 mg,Behavioral Health,Generic,True,False,17.0
+00121-1111-11,Escitalopram 10 mg,Behavioral Health,Generic,True,False,19.0
+00132-1212-12,HumiraFlex,Inflammatory,Brand,True,False,6150.0
+00143-1313-13,EnbrelSure,Inflammatory,Brand,True,False,5720.0
+00154-1414-14,Albuterol HFA,Respiratory,Generic,False,False,38.0
+00165-1515-15,Advair Diskus,Respiratory,Brand,True,True,335.0
+00176-1616-16,Fluticasone/Salmeterol,Respiratory,Generic,True,False,118.0
+00187-1717-17,Amoxicillin 500 mg,Anti-infective,Generic,False,False,14.0
+00198-1818-18,Azithromycin 250 mg,Anti-infective,Generic,False,False,22.0
+00209-1919-19,MigraRelief,Neurology,Brand,False,True,410.0
+00210-2020-20,Sumatriptan 50 mg,Neurology,Generic,False,False,32.0
