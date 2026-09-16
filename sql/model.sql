@@ -31,10 +31,10 @@ WITH duplicate_ids AS (
                OR (m.termination_date IS NOT NULL AND DATE(c.service_date) > DATE(m.termination_date))
              THEN 1 ELSE 0 END AS inconsistent_date,
         CASE WHEN c.claim_status IN ('PAID', 'REVERSED')
-                  AND ABS(COALESCE(c.gross_cost, 0) - COALESCE(c.member_payment, 0) - COALESCE(c.plan_payment, 0)) > 0.01
+                  AND ROUND(ABS(COALESCE(c.gross_cost, 0) - COALESCE(c.member_payment, 0) - COALESCE(c.plan_payment, 0)), 2) > 0.01
              THEN 1
              WHEN c.claim_status = 'REJECTED'
-                  AND ABS(COALESCE(c.gross_cost, 0) + COALESCE(c.member_payment, 0) + COALESCE(c.plan_payment, 0)) > 0.01
+                  AND ROUND(ABS(COALESCE(c.gross_cost, 0) + COALESCE(c.member_payment, 0) + COALESCE(c.plan_payment, 0)), 2) > 0.01
              THEN 1 ELSE 0 END AS reconciliation_failure,
         CASE WHEN cl.client_id IS NULL OR m.member_id IS NULL OR dr.ndc IS NULL THEN 1 ELSE 0 END AS reference_failure,
         CASE WHEN c.claim_status NOT IN ('PAID', 'REJECTED', 'REVERSED')
